@@ -27,9 +27,9 @@ local Library = {
 }
 
 local function DarkenObjectColor(object, amount)
-    local ColorR = (object.r * 255) - amount
-    local ColorG = (object.g * 255) - amount
-    local ColorB = (object.b * 255) - amount
+    local ColorR = (object.r * 0) - amount
+    local ColorG = (object.g * 0) - amount
+    local ColorB = (object.b * 0) - amount
    
     return Color3.fromRGB(ColorR, ColorG, ColorB)
 end
@@ -453,7 +453,7 @@ function Library:CreateTab(name)
 
             Button.Name = "Button"
             Button.Parent = NameButton
-            Button.BackgroundColor3 = Color3.fromRGB(128,128,128)
+            Button.BackgroundColor3 = Color3.fromRGB(0,0,0)
             Button.BackgroundTransparency = 1.000
             Button.BorderSizePixel = 0
             Button.Position = UDim2.new(0.454314709, -76, 0.528571427, -12)
