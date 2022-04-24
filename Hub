@@ -129,7 +129,7 @@ UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Global
 Main.Name = "Main"
 Main.Parent = UILibrary
 Main.BackgroundColor3 = Library.Theme.BackgroundColor
-Main.BackgroundTransparency = 0.1
+Main.BackgroundTransparency = 1.000
 Main.Position = UDim2.new(0.590086579, 0, 0.563882053, 0)
 Main.Size = UDim2.new(0, 450, 0, 0)
 Main.ZIndex = 2
@@ -142,7 +142,7 @@ Main.SliceScale = 0.050
 Border.Name = "Border"
 Border.Parent = Main
 Border.BackgroundColor3 = Library.Theme.MainColor
-Border.BackgroundTransparency = 0.1
+Border.BackgroundTransparency = 1.000
 Border.Position = UDim2.new(0, -1, 0, -1)
 Border.Size = UDim2.new(1, 2, 1, 2)
 Border.Image = "rbxassetid://3570695787"
@@ -176,7 +176,7 @@ Tabs.ZIndex = 2
 
 TabButtons.Name = "TabButtons"
 TabButtons.Parent = UITabs
-TabButtons.BackgroundColor3 = Library.Theme.MainColor
+TabButtons.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 TabButtons.BackgroundTransparency = 1.000
 TabButtons.Position = UDim2.new(0, 14, 0, 16)
 TabButtons.Size = UDim2.new(0, 419, 0, 25)
@@ -282,14 +282,14 @@ function Library:CreateTab(name)
 
     NameTab.Name = (name .. "Tab")
     NameTab.Parent = Tabs
-    NameTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    NameTab.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
     NameTab.BackgroundTransparency = 1.000
     NameTab.Size = UDim2.new(1, 0, 1, 0)
     NameTab.ZIndex = 2
 
     NameTabButton.Name = (name .. "TabButton")
     NameTabButton.Parent = TabButtons
-    NameTabButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    NameTabButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
     NameTabButton.BackgroundTransparency = 1.000
     NameTabButton.Size = UDim2.new(0, 84, 0, 25)
     NameTabButton.ZIndex = 2
@@ -301,7 +301,7 @@ function Library:CreateTab(name)
     
     Title.Name = "Title"
     Title.Parent = NameTabButton
-    Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Title.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
     Title.BackgroundTransparency = 1.000
     Title.Size = UDim2.new(1, 0, 1, 0)
     Title.ZIndex = 2
