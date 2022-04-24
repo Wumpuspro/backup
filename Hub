@@ -12,7 +12,7 @@ ContentProvider:PreloadAsync({"rbxassetid://3570695787", "rbxassetid://270889159
 
 local Library = {
     Theme = {
-        MainColor = Color3.fromRGB(0, 255, 255),
+        MainColor = Color3.fromRGB(255, 255, 255),
         BackgroundColor = Color3.fromRGB(35, 35, 35),
         UIToggleKey = Enum.KeyCode.RightControl,
         TextFont = Enum.Font.SourceSansBold,
@@ -154,7 +154,7 @@ Border.ImageTransparency = 1
 
 Topbar.Name = "Topbar"
 Topbar.Parent = Main
-Topbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Topbar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Topbar.BackgroundTransparency = 1.000
 Topbar.Size = UDim2.new(0, 450, 0, 15)
 Topbar.ZIndex = 2
