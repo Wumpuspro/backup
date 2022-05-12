@@ -1,0 +1,150 @@
+local library = {}
+
+function library:CreateWindow(title)
+	local Loader = Instance.new("ScreenGui")
+	local MainFrame = Instance.new("Frame")
+	local Bar = Instance.new("Frame")
+	local Title = Instance.new("TextLabel")
+    local ExitButton = Instance.new("TextButton")
+	local script = Instance.new('LocalScript', MainFrame)
+	local UIS = game:GetService("UserInputService")
+
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+
+	Loader.Name = "Loader"
+	Loader.Parent = game:GetService("CoreGui")
+
+	MainFrame.Name = "MainFrame"
+	MainFrame.Parent = Loader
+	MainFrame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+	MainFrame.BorderSizePixel = 0
+	MainFrame.Position = UDim2.new(0.389265925, 0, 0.399999976, 0)
+	MainFrame.Size = UDim2.new(0, 358, 0, 162)
+
+	Bar.Name = "Bar"
+	Bar.Parent = MainFrame
+	Bar.BackgroundColor3 = Color3.fromRGB(32, 32, 37)
+	Bar.BorderSizePixel = 0
+	Bar.Position = UDim2.new(0, 0, 0.19135803, 0)
+	Bar.Size = UDim2.new(0, 358, 0, 2)
+
+	Title.Name = "Title"
+	Title.Parent = MainFrame
+	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title.BackgroundTransparency = 1.000
+	Title.BorderSizePixel = 0
+	Title.Size = UDim2.new(0, 358, 0, 31)
+	Title.Font = Enum.Font.SourceSans
+	Title.Text = title
+	Title.TextColor3 = Color3.fromRGB(193, 193, 193)
+	Title.TextSize = 26.000
+
+	ExitButton.Name = "ExitButton"
+    ExitButton.Parent = MainFrame
+    ExitButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    ExitButton.BackgroundTransparency = 1.000
+    ExitButton.BorderSizePixel = 0
+    ExitButton.Position = UDim2.new(0.921940923, 0, 0, 0)
+    ExitButton.Size = UDim2.new(0, 30, 0, 30)
+    ExitButton.Font = Enum.Font.Roboto
+    ExitButton.Text = "X"
+    ExitButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    ExitButton.TextSize = 14.000
+    ExitButton.TextWrapped = true
+    ExitButton.MouseButton1Click:Connect(function() Loader:Destroy() end)
+
+    local window = {}
+
+	function window:Destroy()
+		Loader:Destroy();
+	end
+
+	function window:CreateLabel(text)
+		local Label = Instance.new("TextLabel")
+
+		Label.Name = "Label"
+		Label.Parent = MainFrame
+		Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Label.BackgroundTransparency = 1.000
+		Label.BorderSizePixel = 0
+		Label.Position = UDim2.new(0, 0, 0.327160507, 0)
+		Label.Size = UDim2.new(0, 358, 0, 31)
+		Label.Font = Enum.Font.SourceSans
+		Label.Text = text
+		Label.TextColor3 = Color3.fromRGB(193, 193, 193)
+		Label.TextSize = 26.000
+	end
+
+	function window:CreateButton(text,cb)
+		local Button = Instance.new("TextButton")
+		local Button_Roundify_10px = Instance.new("ImageLabel")
+
+		Button.Name = "Button"
+		Button.Parent = MainFrame
+		Button.BackgroundColor3 = Color3.fromRGB(19, 38, 209)
+		Button.BackgroundTransparency = 1.000
+		Button.BorderSizePixel = 0
+		Button.Position = UDim2.new(0.220670387, 0, 0.660493851, 0)
+		Button.Size = UDim2.new(0, 200, 0, 32)
+		Button.ZIndex = 3
+		Button.Font = Enum.Font.SourceSans
+		Button.Text = text
+		Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Button.TextSize = 20.000
+		Button.MouseButton1Click:Connect(function()
+			pcall(cb)
+		end)
+
+		Button_Roundify_10px.Name = "Button_Roundify_10px"
+		Button_Roundify_10px.Parent = Button
+		Button_Roundify_10px.Active = true
+		Button_Roundify_10px.AnchorPoint = Vector2.new(0.5, 0.5)
+		Button_Roundify_10px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Button_Roundify_10px.BackgroundTransparency = 1.000
+		Button_Roundify_10px.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Button_Roundify_10px.Selectable = true
+		Button_Roundify_10px.Size = UDim2.new(1, 0, 1, 0)
+		Button_Roundify_10px.Image = "rbxassetid://3570695787"
+		Button_Roundify_10px.ImageColor3 = Color3.fromRGB(19, 38, 209)
+		Button_Roundify_10px.ScaleType = Enum.ScaleType.Slice
+		Button_Roundify_10px.SliceCenter = Rect.new(100, 100, 100, 100)
+		Button_Roundify_10px.SliceScale = 0.100
+	end
+	return window
+end
+return library
