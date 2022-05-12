@@ -62,7 +62,7 @@ function library:CreateWindow(name)
 	MainFrame.BackgroundColor3 = Color3.fromRGB(32, 32, 37)
 	MainFrame.BorderSizePixel = 0
 	MainFrame.Position = UDim2.new(0.321212113, 0, 0.330061376, 0)
-	MainFrame.Size = UDim2.new(0, 590, 0, 276)
+	MainFrame.Size = UDim2.new(0, 560, 0, 280)
 
 	dragify(MainFrame)
 
@@ -71,7 +71,7 @@ function library:CreateWindow(name)
 
 	Bar.Name = "Bar"
 	Bar.Parent = MainFrame
-	Bar.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+	Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Bar.BorderSizePixel = 0
 	Bar.Position = UDim2.new(0, 0, 0.125242367, 0)
 	Bar.Size = UDim2.new(0, 590, 0, 2)
@@ -85,7 +85,7 @@ function library:CreateWindow(name)
 	Title.Size = UDim2.new(0, 458, 0, 30)
 	Title.Font = Enum.Font.SourceSans
 	Title.RichText = true;
-	Title.Text = "<font color=\"#7300ff\">"..string.sub(name, 1, 1).."</font>"..string.sub(name, 2)
+	Title.Text = "<font color=\"#FF0000\">"..string.sub(name, 1, 1).."</font>"..string.sub(name, 2)
 	Title.TextColor3 = Color3.new(1, 1, 1)
 	Title.TextSize = 23
 	Title.TextXAlignment = Enum.TextXAlignment.Left
