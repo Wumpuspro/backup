@@ -1,0 +1,40 @@
+{
+    "Millionaire Empire Tycoon": {
+        "Status": true,
+        "GameId": 6677985923,
+        "Script": "https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Millionaire%20empire%20tycoon",
+        "GameName": "[🔥X2 CASH] Millionaire Empire Tycoon"
+    },
+    "Clicker Simulator": {
+        "Status": true,
+        "GameId": 7560156054,
+        "Script":"https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Clicker%20simulator",
+        "GameName": "[NEW] ⚡Clicker Simulator!"
+    },
+    "Sonic Speed Simulator": {
+        "Status": true,
+        "GameId": 9049840490,
+        "Script":"https://gitlab.com/Ner0ox/versus/-/raw/main/Games/Sonic%20Speed%20Simulator.lua",
+        "GameName": "Sonic Spoeed Simulator"
+    },
+    "Rebirth Champions X": {
+        "Status": true,
+        "GameId": 8540346411,
+        "Script":"https://gitlab.com/Ner0ox/versus/-/raw/main/Games/Rebirth%20Champions%20X.lua",
+        "GameName": "[🔥HELL!] Rebirth Champions X"
+    },
+    "Toy Clicking Simulator": {
+        "Status": true,
+        "GameId": 4846954296,
+        "Script":"https://gitlab.com/Ner0ox/versus/-/raw/main/Games/Toy%20Clicking%20Simulator.lua",
+        "GameName": "🍀 ST PATRICK'S 🍀 Toy Clicking Simulator!"
+    },
+    "Crappy Clicking Simulator": {
+        "Status": true,
+        "GameId": 6251374118,
+        "Script":"https://gitlab.com/Ner0ox/versus/-/raw/main/Games/Crappy%20Clicking%20Simulator.lua",
+        "GameName": "[🖱️X10 CLICKS🖱️] Clicking Simulator"
+    }
+
+
+}
