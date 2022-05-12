@@ -62,7 +62,7 @@ function library:CreateWindow(name)
 	MainFrame.BackgroundColor3 = Color3.fromRGB(32, 32, 37)
 	MainFrame.BorderSizePixel = 0
 	MainFrame.Position = UDim2.new(0.321212113, 0, 0.330061376, 0)
-	MainFrame.Size = UDim2.new(0, 560, 0, 280)
+	MainFrame.Size = UDim2.new(0, 563, 0, 285)
 
 	dragify(MainFrame)
 
@@ -74,7 +74,7 @@ function library:CreateWindow(name)
 	Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Bar.BorderSizePixel = 0
 	Bar.Position = UDim2.new(0, 0, 0.125242367, 0)
-	Bar.Size = UDim2.new(0, 590, 0, 2)
+	Bar.Size = UDim2.new(0, 563, 0, 2)
 
 	Title.Name = "Title"
 	Title.Parent = MainFrame
