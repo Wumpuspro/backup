@@ -104,7 +104,7 @@ function library:CreateWindow(name)
 	CreditLabel.BackgroundTransparency = 1.000
 	CreditLabel.Size = UDim2.new(0, 471, 0, 239)
 	CreditLabel.Font = Enum.Font.SourceSans
-	CreditLabel.Text = "Created by: Nerox & Cammy"
+	CreditLabel.Text = "Created by : KaiZen"
 	CreditLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 	CreditLabel.TextSize = 67.000
 	CreditLabel.TextWrapped = true
