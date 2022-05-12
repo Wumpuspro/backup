@@ -71,7 +71,7 @@ function library:CreateWindow(name)
 
 	Bar.Name = "Bar"
 	Bar.Parent = MainFrame
-	Bar.BackgroundColor3 = Color3.new(0.45098, 0, 1)
+	Bar.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 	Bar.BorderSizePixel = 0
 	Bar.Position = UDim2.new(0, 0, 0.125242367, 0)
 	Bar.Size = UDim2.new(0, 590, 0, 2)
@@ -124,7 +124,7 @@ function library:CreateWindow(name)
 
 	SideContainer.Name = "SideContainer"
 	SideContainer.Parent = MainFrame
-	SideContainer.BackgroundColor3 = Color3.new(0.168627, 0.168627, 0.168627)
+	SideContainer.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 	SideContainer.BackgroundTransparency = 1
 	SideContainer.BorderSizePixel = 0
 	SideContainer.Position = UDim2.new(0, 0, 0.132488742, 0)
@@ -140,7 +140,7 @@ function library:CreateWindow(name)
 
 	SideBarLine.Name = "SideBarLine"
 	SideBarLine.Parent = MainFrame
-	SideBarLine.BackgroundColor3 = Color3.new(0.45098, 0, 1)
+	SideBarLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	SideBarLine.BorderSizePixel = 0
 	SideBarLine.Position = UDim2.new(0.198305085, 0, 0.132488742, 0)
 	SideBarLine.Size = UDim2.new(0, 2, 0, 239)
@@ -177,7 +177,7 @@ function library:CreateWindow(name)
 
 		SideButton.Name = name
 		SideButton.Parent = SideContainer
-		SideButton.BackgroundColor3 = Color3.new(0.45098, 0, 1)
+		SideButton.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 		SideButton.Size = UDim2.new(0, 98, 0, 30)
 		SideButton.Font = Enum.Font.SourceSans
 		SideButton.Text = name
@@ -217,7 +217,7 @@ function library:CreateWindow(name)
 
 			Button.Name = name
 			Button.Parent = ButBack
-			Button.BackgroundColor3 = Color3.new(0.45098, 0, 1)
+			Button.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 			Button.Size = UDim2.new(0, 413, 0, 30)
 			Button.Font = Enum.Font.SourceSans
 			Button.Text = name
@@ -262,7 +262,7 @@ function library:CreateWindow(name)
 
 			InputButton.Name = name
 			InputButton.Parent = InputBack
-			InputButton.BackgroundColor3 = Color3.fromRGB(115, 0, 255)
+			InputButton.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 			InputButton.Size = UDim2.new(0, 207, 0, 32)
 			InputButton.Font = Enum.Font.SourceSans
 			InputButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -274,7 +274,7 @@ function library:CreateWindow(name)
 
 			TextBox.Name = inputname
 			TextBox.Parent = InputButton
-			TextBox.BackgroundColor3 = Color3.fromRGB(115, 0, 255)
+			TextBox.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 			TextBox.Position = UDim2.new(1.10000002, 0, 0, 0)
 			TextBox.Size = UDim2.new(0, 191, 0, 32)
 			TextBox.Font = Enum.Font.SourceSans
@@ -315,7 +315,7 @@ function library:CreateWindow(name)
 
 			Button.Name = name
 			Button.Parent = ButtonBack
-			Button.BackgroundColor3 = Color3.new(0.45098, 0, 1)
+			Button.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 			Button.Size = UDim2.new(0, 413, 0, 30)
 			Button.Font = Enum.Font.SourceSans
 			Button.Text = name
@@ -388,7 +388,7 @@ function library:CreateWindow(name)
 
 			FireButton.Name = "FireButton"
 			FireButton.Parent = Dropdown
-			FireButton.BackgroundColor3 = Color3.fromRGB(115, 0, 255)
+			FireButton.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 			FireButton.Position = UDim2.new(1.05316257, 0, 0, 0)
 			FireButton.Size = UDim2.new(0, 89, 0, 30)
 			FireButton.Font = Enum.Font.SourceSans
