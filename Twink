@@ -200,7 +200,6 @@ function UILibrary.Load(GUITitle)
 	MainFrame.ImageColor3 = Color3.fromRGB(30,30,30)
 	MainFrame.Parent = ContainerFrame
         MainFrame.Active = true
-        MainFrame.Draggable = true
 	
 	local MenuBar, DisplayFrame, TitleBar
 	
