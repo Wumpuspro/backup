@@ -21,6 +21,13 @@ local IconLibraryID2 = "rbxassetid://3926307971"
 
 local MainFont = Enum.Font.Gotham
 
+local function GetXY(GuiObject)
+	local X, Y = Mouse.X - GuiObject.AbsolutePosition.X, Mouse.Y - GuiObject.AbsolutePosition.Y
+	local MaxX, MaxY = GuiObject.AbsoluteSize.X, GuiObject.AbsoluteSize.Y
+	X, Y = math.clamp(X, 0, MaxX), math.clamp(Y, 0, MaxY)
+	return X, Y, X/MaxX, Y/MaxY
+end
+
 local function TitleIcon(ButtonOrNot)
 	local NewTitleIcon = Instance.new(ButtonOrNot and "ImageButton" or "ImageLabel")
 	NewTitleIcon.Name = "TitleIcon"
@@ -268,7 +275,7 @@ function UILibrary.Load(GUITitle)
 	
 	MenuListLayout = Instance.new("UIListLayout")
 	MenuListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	MenuListLayout.Padding = UDim.MenuBa)
+	MenuListLayout.Padding = UDim.new(0,5)
 	MenuListLayout.Parent = MenuBar
 	
 	local TabCount = 0
