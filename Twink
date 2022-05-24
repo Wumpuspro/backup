@@ -194,8 +194,8 @@ function UILibrary.Load(GUITitle)
 	MainFrame = RoundBox(5)
 	MainFrame.ClipsDescendants = true
 	MainFrame.Name = "MainFrame"
+	MainFrame.Size = UDim2.new(1,-50,1,-30)
 	MainFrame.Position = UDim2.new(0,25,0,15)
-	MainFrame.Size = UDim2.new(1,-70,1,-50)
 	MainFrame.ImageColor3 = Color3.fromRGB(30,30,30)
 	MainFrame.Parent = ContainerFrame
 	
@@ -211,9 +211,9 @@ function UILibrary.Load(GUITitle)
 	MenuBar.Parent = MainFrame
 	
 	DisplayFrame = RoundBox(5)
-	Scrollingframe.Name = "Display"
+	DisplayFrame.Name = "Display"
 	DisplayFrame.ImageColor3 = Color3.fromRGB(20,20,20)
-	DisplayFrame.Size = UDim2.new(1,-115,0,235)
+	DisplayFrame.Size = UDim2.new(1,-159,0,265)
 	DisplayFrame.Position = UDim2.new(0,110,0,30)
 	DisplayFrame.Parent = MainFrame
 	
