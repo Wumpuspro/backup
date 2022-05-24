@@ -103,7 +103,7 @@ local function DropShadow()
 end
 
 local function Frame()
-	local NewFrame = Instance.new("Frame")
+	local NewFrame = Instance.new("ScrollingFrameFrame")
 	NewFrame.BorderSizePixel = 0
 	NewFrame.ZIndex = Level
 	return NewFrame
