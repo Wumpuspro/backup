@@ -172,7 +172,7 @@ function UILibrary.Load(GUITitle)
 		FindOldInstance:Destroy()
 	end
 	
-	local NewInstance, ContainerFrame, ContainerShadow, MainFrame
+	local NewInstance, ContainerFrame, ContainerShadow, ScrollingFrame
 	
 	NewInstance = Instance.new("ScreenGui")
 	NewInstance.Name = GUITitle
@@ -191,15 +191,15 @@ function UILibrary.Load(GUITitle)
 	
 	Level += 1
 	
-	MainFrame = RoundBox(5)
-	MainFrame.ClipsDescendants = true
-	MainFrame.Name = "MainFrame"
-	MainFrame.Size = UDim2.new(1,-50,1,-30)
-	MainFrame.Position = UDim2.new(0,25,0,15)
-	MainFrame.ImageColor3 = Color3.fromRGB(30,30,30)
-	MainFrame.Parent = ContainerFrame
+	ScrollingFrame = RoundBox(5)
+	ScrollingFrame.ClipsDescendants = true
+	ScrollingFrame.Name = "ScrollingFrame"
+	ScrollingFrame.Size = UDim2.new(1,-50,1,-30)
+	ScrollingFrame.Position = UDim2.new(0,25,0,15)
+	ScrollingFrame.ImageColor3 = Color3.fromRGB(30,30,30)
+	ScrollingFrame.Parent = ContainerFrame
 	
-	local MenuBar, DisplayFrame, TitleBar
+	local MenuBar, Scrollingframe, TitleBar
 	
 	MenuBar = ScrollingFrame()
 	MenuBar.Name = "MenuBar"
@@ -208,21 +208,21 @@ function UILibrary.Load(GUITitle)
 	MenuBar.Size = UDim2.new(0,100,0,235)
 	MenuBar.Position = UDim2.new(0,5,0,30)
 	MenuBar.CanvasSize = UDim2.new(0,0,0,0)
-	MenuBar.Parent = MainFrame
+	MenuBar.Parent = ScrollingFrame
 	
-	DisplayFrame = RoundBox(5)
-	DisplayFrame.Name = "Display"
-	DisplayFrame.ImageColor3 = Color3.fromRGB(20,20,20)
-	DisplayFrame.Size = UDim2.new(1,-115,0,235)
-	DisplayFrame.Position = UDim2.new(0,110,0,30)
-	DisplayFrame.Parent = MainFrame
+	Scrollingframe = RoundBox(5)
+	Scrollingframe.Name = "Display"
+	Scrollingframe.ImageColor3 = Color3.fromRGB(20,20,20)
+	Scrollingframe.Size = UDim2.new(1,-115,0,235)
+	Scrollingframe.Position = UDim2.new(0,110,0,30)
+	Scrollingframe.Parent = ScrollingFrame
 	
 	TitleBar = RoundBox(5)
 	TitleBar.Name = "TitleBar"
 	TitleBar.ImageColor3 = Color3.fromRGB(40,40,40)
 	TitleBar.Size = UDim2.new(1,-10,0,20)
 	TitleBar.Position = UDim2.new(0,5,0,5)
-	TitleBar.Parent = MainFrame
+	TitleBar.Parent = ScrollingFrame
 	
 	Level += 1
 	
@@ -241,11 +241,11 @@ function UILibrary.Load(GUITitle)
 	MinimiseButton.MouseButton1Down:Connect(function()
 		MinimiseToggle = not MinimiseToggle
 		if not MinimiseToggle then
-			Tween(MainFrame, {Size = UDim2.new(1,-50,0,30)})
+			Tween(ScrollingFrame, {Size = UDim2.new(1,-50,0,30)})
 			Tween(MinimiseButton, {Rotation = 0})
 			Tween(ContainerShadow, {ImageTransparency = 1})
 		else
-			Tween(MainFrame, {Size = UDim2.new(1,-50,1,-30)})
+			Tween(ScrollingFrame, {Size = UDim2.new(1,-50,1,-30)})
 			Tween(MinimiseButton, {Rotation = 180})
 			Tween(ContainerShadow, {ImageTransparency = DropShadowTransparency})
 		end
@@ -308,7 +308,7 @@ function UILibrary.Load(GUITitle)
 				end
 			end)
 			spawn(function()
-				for _, Display in next, DisplayFrame:GetChildren() do
+				for _, Display in next, Scrollingframe:GetChildren() do
 					if Display:IsA("GuiObject") then
 						Display.Visible = string.find(Display.Name:lower(), PageContainer.Name:lower())
 					end
@@ -320,7 +320,7 @@ function UILibrary.Load(GUITitle)
 		DisplayPage.Visible = (TabCount == 0)
 		DisplayPage.Name = PageTitle
 		DisplayPage.Size = UDim2.new(1,0,1,0)
-		DisplayPage.Parent = DisplayFrame
+		DisplayPage.Parent = Scrollingframe
 		
 		TabCount += 1
 		
