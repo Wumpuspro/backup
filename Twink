@@ -172,22 +172,22 @@ function UILibrary.Load(GUITitle)
 		FindOldInstance:Destroy()
 	end
 	
-	local NewInstance, ContainerFrame, ContainerShadow, MainFrame
+	local NewInstance, ScrollingFrame, ContainerShadow,ScrollingFrame
 	
 	NewInstance = Instance.new("ScreenGui")
 	NewInstance.Name = GUITitle
 	NewInstance.Parent = TargetedParent
 	
-	ContainerFrame = Frame()
-	ContainerFrame.Name = "ContainerFrame"
-	ContainerFrame.Size = UDim2.new(0,500,0,300)
-	ContainerFrame.Position = UDim2.new(0.5,-250,0.5,-150)
-	ContainerFrame.BackgroundTransparency = 1
-	ContainerFrame.Parent = NewInstance
+	ScrollingFrame = Frame()
+	ScrollingFrame.Name = "ScrollingFrame"
+	ScrollingFrame.Size = UDim2.new(0,500,0,300)
+	ScrollingFrame.Position = UDim2.new(0.5,-250,0.5,-150)
+	ScrollingFrame.BackgroundTransparency = 1
+	ScrollingFrame.Parent = NewInstance
 	
 	ContainerShadow = DropShadow()
 	ContainerShadow.Name = "Shadow"
-	ContainerShadow.Parent = ContainerFrame
+	ContainerShadow.Parent = ScrollingFrame
 	
 	Level += 1
 	
@@ -197,7 +197,7 @@ function UILibrary.Load(GUITitle)
 	MainFrame.Size = UDim2.new(1,-50,1,-30)
 	MainFrame.Position = UDim2.new(0,25,0,15)
 	MainFrame.ImageColor3 = Color3.fromRGB(30,30,30)
-	MainFrame.Parent = ContainerFrame
+	MainFrame.Parent = ScrollingFrame
 	
 	local MenuBar, DisplayFrame, TitleBar
 	
@@ -257,7 +257,7 @@ function UILibrary.Load(GUITitle)
 		Move = Mouse.Move:Connect(function()
 			local NewMX, NewMY = Mouse.X, Mouse.Y
 			local DX, DY = NewMX - LastMX, NewMY - LastMY
-			ContainerFrame.Position += UDim2.new(0,DX,0,DY)
+			ScrollingFrame.Position += UDim2.new(0,DX,0,DY)
 			LastMX, LastMY = NewMX, NewMY
 		end)
 		Kill = UserInputService.InputEnded:Connect(function(input)
