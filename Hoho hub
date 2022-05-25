@@ -221,7 +221,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	TrueGame.Text = the_game_name or game.Name or "Game name"
 	TrueGame.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TrueGame.TextScaled = true
-	TrueGame.TextSize = 14.000
+	TrueGame.TextSize = 18.000
 	TrueGame.TextStrokeTransparency = 0.100
 	TrueGame.TextWrapped = true
 	TrueGame.TextXAlignment = Enum.TextXAlignment.Left
@@ -238,8 +238,8 @@ function hoho:Window(hub, the_game_name, main_color)
 	
 	BlackBackground.Name = "BlackBackground"
 	BlackBackground.Parent = Top_Bar
-	BlackBackground.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-	BlackBackground.BackgroundTransparency = 0
+	BlackBackground.BackgroundColor3 = Color3.fromRGB(128, 128, 128)
+	BlackBackground.BackgroundTransparency = 0.5
 	BlackBackground.BorderSizePixel = 0
 	BlackBackground.Position = UDim2.new(-0.000204942495, 0, 1, 0)
 	BlackBackground.Size = UDim2.new(0, 450, 0, 272)
@@ -372,6 +372,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	SettingBt.Image = "rbxassetid://6863506969"
 	SettingBt.HoverImage = "rbxassetid://3340612992"
 	SettingBt.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	SettingBt.Visible = false
 	
 	SettingBt.MouseButton1Click:Connect(function()
 		pcall(function()
@@ -485,7 +486,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			NofLabel.Size = UDim2.new(0, 188, 0, 52)
 			NofLabel.ZIndex = 4
 			NofLabel.Font = Enum.Font.Cartoon
-			NofLabel.TextColor3 =  Color3.fromRGB(64,64,64)
+			NofLabel.TextColor3 =  Color3.fromRGB(255,255,255)
 			NofLabel.TextScaled = true
 			NofLabel.TextSize = 14.000
 			NofLabel.TextStrokeTransparency = 0.100
@@ -605,7 +606,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			local linetemp = Instance.new("Frame")
 			linetemp.Name = "linetemp"
 			linetemp.Parent = TabFrame
-			linetemp.BackgroundColor3 =  Color3.fromRGB(64,64,64)
+			linetemp.BackgroundColor3 =  Color3.fromRGB(255,255,255)
 			linetemp.BorderSizePixel = 0
 			linetemp.Position = UDim2.new(0, 0, 0.102272727, 0)
 			linetemp.Size = UDim2.new(0, 301, 0, 1)
