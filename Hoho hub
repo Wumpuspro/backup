@@ -611,7 +611,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			linetemp.BackgroundColor3 =  Color3.fromRGB(255,255,255)
 			linetemp.BorderSizePixel = 0
 			linetemp.Position = UDim2.new(0, 0, 0.102272727, 0)
-			linetemp.Size = UDim2.new(0, 305, 0, 1)
+			linetemp.Size = UDim2.new(0, 308, 0, 2)
 			linetemp.ZIndex = 4
 		end
 		
