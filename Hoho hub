@@ -391,7 +391,6 @@ function hoho:Window(hub, the_game_name, main_color)
 	Minimize.ZIndex = 15
 	Minimize.Image = "rbxassetid://6863506969."
 	Minimize.ImageColor3 = Color3.fromRGB(64, 64, 64)
-	Minimize.ImageTransparency = 1.000
 	
 	Minimize.MouseButton1Click:Connect(function()
 		if openning == false then
