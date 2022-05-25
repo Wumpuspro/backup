@@ -201,7 +201,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 	Top_Bar.Name = "Top_Bar"
 	Top_Bar.Parent = DevGui
-	Top_Bar.BackgroundColor3 =  Color3.fromRGB(128, 128, 128)
+	Top_Bar.BackgroundColor3 =  Color3.fromRGB(64, 64, 64)
 	Top_Bar.BorderSizePixel = 0
 	Top_Bar.Position = UDim2.new(0.199795082, 0, 0.178649232, 0)
 	Top_Bar.Size = UDim2.new(0, 450, 0, 24)
