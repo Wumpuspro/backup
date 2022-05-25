@@ -300,7 +300,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	Tabs.Size = UDim2.new(0, 123, 0, 231)
 	Tabs.ZIndex = 4
 	Tabs.CanvasPosition = Vector2.new(0, 4.58874464)
-	Tabs.ScrollBarThickness = 5
+	Tabs.ScrollBarThickness = 0
 	Tabs.ScrollBarImageColor3 =  Color3.new(1, 1, 1)
 
 	UIListLayout.Parent = Tabs
@@ -490,7 +490,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			NofLabel.Font = Enum.Font.SciFi
 			NofLabel.TextColor3 =  Color3.fromRGB(255,255,255)
 			NofLabel.TextScaled = false
-			NofLabel.TextSize = 14.000
+			NofLabel.TextSize = 25.000
 			NofLabel.TextStrokeTransparency = 0.100
 			NofLabel.TextTransparency = 0.100
 			NofLabel.TextWrapped = true
@@ -573,7 +573,7 @@ function hoho:Window(hub, the_game_name, main_color)
 		ButtonTest.BackgroundTransparency = 1.000
 		ButtonTest.BorderSizePixel = 0
 		ButtonTest.Position = UDim2.new(0, 0, -0.019864697, 0)
-		ButtonTest.Size = UDim2.new(0, 122, 0, 30)
+		ButtonTest.Size = UDim2.new(0, 124, 0, 34)
 		ButtonTest.ZIndex = 4
 
 		ClickHere.Name = "ClickHere"
@@ -587,7 +587,7 @@ function hoho:Window(hub, the_game_name, main_color)
 		ClickHere.Text = "  "..tab_name or "  Button"
 		ClickHere.TextColor3 = Color3.fromRGB(255, 255, 255)
 		ClickHere.TextStrokeTransparency = 0.0
-		ClickHere.TextSize = 16.000
+		ClickHere.TextSize = 14.000
 		ClickHere.TextXAlignment = Enum.TextXAlignment.Left
 
 		UICorner.CornerRadius = UDim.new(0, 5)
