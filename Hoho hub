@@ -391,7 +391,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	Minimize.ZIndex = 15
 	Minimize.Image = "rbxassetid://3570695787"
 	Minimize.HoverImage = "rbxassetid://3926305904"
-	Minimize.ImageColor3 = Color3.fromRGB(32, 32,32)
+	Minimize.ImageColor3 = Color3.fromRGB(204, 0,0)
 	
 	Minimize.MouseButton1Click:Connect(function()
 		if openning == false then
@@ -546,8 +546,8 @@ function hoho:Window(hub, the_game_name, main_color)
 		TabFrame.Size = UDim2.new(0, 313, 0, 264)
 		TabFrame.Visible = false
 		TabFrame.ZIndex = 5
-		TabFrame.ScrollBarThickness = 5
-		TabFrame.ScrollBarImageColor3 =  Color3.new(1, 1, 1)
+		TabFrame.ScrollBarThickness = 0
+		TabFrame.ScrollBarImageColor3 =  Color3.new(64, 64, 64)
 
 		UIListLayout2.Parent = TabFrame
 		UIListLayout2.Padding = UDim.new(0,3)
@@ -573,7 +573,7 @@ function hoho:Window(hub, the_game_name, main_color)
 		ButtonTest.BackgroundTransparency = 1.000
 		ButtonTest.BorderSizePixel = 0
 		ButtonTest.Position = UDim2.new(0, 0, -0.019864697, 0)
-		ButtonTest.Size = UDim2.new(0, 124, 0, 34)
+		ButtonTest.Size = UDim2.new(0, 130, 0, 38)
 		ButtonTest.ZIndex = 4
 
 		ClickHere.Name = "ClickHere"
@@ -587,7 +587,7 @@ function hoho:Window(hub, the_game_name, main_color)
 		ClickHere.Text = "  "..tab_name or "  Button"
 		ClickHere.TextColor3 = Color3.fromRGB(255, 255, 255)
 		ClickHere.TextStrokeTransparency = 0.0
-		ClickHere.TextSize = 14.000
+		ClickHere.TextSize = 12.000
 		ClickHere.TextXAlignment = Enum.TextXAlignment.Left
 
 		UICorner.CornerRadius = UDim.new(0, 5)
