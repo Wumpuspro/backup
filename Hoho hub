@@ -201,7 +201,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 	Top_Bar.Name = "Top_Bar"
 	Top_Bar.Parent = DevGui
-	Top_Bar.BackgroundColor3 =  Color3.fromRGB(64, 64, 64)
+	Top_Bar.BackgroundColor3 =  Color3.fromRGB(128, 128, 128)
 	Top_Bar.BorderSizePixel = 0
 	Top_Bar.Position = UDim2.new(0.199795082, 0, 0.178649232, 0)
 	Top_Bar.Size = UDim2.new(0, 450, 0, 24)
@@ -311,7 +311,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 	line.Name = "line"
 	line.Parent = LeftTab
-	line.BackgroundColor3 =  Color3.fromRGB(64,64,64)
+	line.BackgroundColor3 =  Color3.fromRGB(255,255,255)
 	line.BorderSizePixel = 0
 	line.Position = UDim2.new(0, 0, 0.124528289, 0)
 	line.Size = UDim2.new(0, 123, 0, 1)
@@ -583,7 +583,7 @@ function hoho:Window(hub, the_game_name, main_color)
 		ClickHere.Font = Enum.Font.Cartoon
 		ClickHere.Text = "  "..tab_name or "  Button"
 		ClickHere.TextColor3 = Color3.fromRGB(255, 255, 255)
-		ClickHere.TextStrokeTransparency = 0.5
+		ClickHere.TextStrokeTransparency = 0.0
 		ClickHere.TextSize = 16.000
 		ClickHere.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -633,7 +633,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			ClickMe.ZIndex = 5
 			ClickMe.Font = Enum.Font.Cartoon
 			ClickMe.Text = text.." 🖱️" or "Button 🖱️"
-			ClickMe.TextColor3 = Color3.fromRGB(0, 0, 0)
+			ClickMe.TextColor3 = Color3.fromRGB(255, 255, 255)
 			ClickMe.TextSize = 19.000
 			ClickMe.TextWrapped = true
 
@@ -687,10 +687,10 @@ function hoho:Window(hub, the_game_name, main_color)
 			TextHere.Size = UDim2.new(0, 289, 0, 24)
 			TextHere.ZIndex = 4
 			TextHere.Font = Enum.Font.Cartoon
-			TextHere.TextColor3 =  Color3.fromRGB(64,64,64)
+			TextHere.TextColor3 =  Color3.fromRGB(255,255,255)
 			TextHere.TextScaled = true
 			TextHere.TextSize = 14.000
-			TextHere.TextStrokeTransparency = 0.100
+			TextHere.TextStrokeTransparency = 0.0
 			TextHere.TextTransparency = 0.100
 			TextHere.TextWrapped = true
 			TextHere.Text = label_text or "Text here"
@@ -740,10 +740,10 @@ function hoho:Window(hub, the_game_name, main_color)
 			TextHere.ZIndex = 4
 			TextHere.Font = Enum.Font.Cartoon
 			TextHere.Text = "  "..toggle_text or "text"
-			TextHere.TextColor3 =  Color3.fromRGB(64,64,64)
+			TextHere.TextColor3 =  Color3.fromRGB(255,255,255)
 			TextHere.TextScaled = true
 			TextHere.TextSize = 14.000
-			TextHere.TextStrokeTransparency = 0.100
+			TextHere.TextStrokeTransparency = 0.00
 			TextHere.TextTransparency = 0.100
 			TextHere.TextWrapped = true
 			TextHere.TextXAlignment = Enum.TextXAlignment.Left
@@ -768,6 +768,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			ClickThis.Font = Enum.Font.SourceSans
 			ClickThis.Text = ""
 			ClickThis.TextColor3 = Color3.fromRGB(0, 0, 0)
+			ClickThis.TextColor3 = Color3.fromRGB(255, 255, 255)
 			ClickThis.TextSize = 14.000
 			
 			UICorner_2.Parent = ClickThis
