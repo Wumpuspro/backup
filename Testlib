@@ -429,7 +429,7 @@ function library:CreateWindow(name)
 				Item.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
 				Item.Position = UDim2.new(0, 0, 1.27499998, 0)
 				Item.Size = UDim2.new(0, 413, 0, 30)
-				Item.Font = Enum.Font.Scifi
+				Item.Font = Enum.Font.SciFi
 				Item.Text = v or "Item"
 				Item.TextColor3 = Color3.fromRGB(255, 255, 255)
 				Item.TextSize = 34.000
