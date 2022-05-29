@@ -366,7 +366,7 @@ function library:CreateWindow(name)
 
 			DropdownBack.Name = name
 			DropdownBack.Parent = CategoryFrame
-			DropdownBack.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+			DropdownBack.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 			DropdownBack.BorderSizePixel = 0
 			DropdownBack.Position = UDim2.new(0, 0, 0.436681211, 0)
 			DropdownBack.Size = UDim2.new(0, 440, 0, 66)
@@ -376,7 +376,7 @@ function library:CreateWindow(name)
 			UIPadding.PaddingTop = UDim.new(0, 10)
 
 			Dropdown.Parent = DropdownBack
-			Dropdown.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			Dropdown.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 			Dropdown.Position = UDim2.new(0, 0, -0.00862045307, 0)
 			Dropdown.Size = UDim2.new(0, 307, 0, 30)
 			Dropdown.Font = Enum.Font.SourceSans
