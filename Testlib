@@ -388,7 +388,7 @@ function library:CreateWindow(name)
 
 			FireButton.Name = "FireButton"
 			FireButton.Parent = Dropdown
-			FireButton.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+			FireButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			FireButton.Position = UDim2.new(1.05316257, 0, 0, 0)
 			FireButton.Size = UDim2.new(0, 89, 0, 30)
 			FireButton.Font = Enum.Font.SourceSans
@@ -429,7 +429,7 @@ function library:CreateWindow(name)
 				Item.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
 				Item.Position = UDim2.new(0, 0, 1.27499998, 0)
 				Item.Size = UDim2.new(0, 413, 0, 30)
-				Item.Font = Enum.Font.SciFi
+				Item.Font = Enum.Font.SourceSans
 				Item.Text = v or "Item"
 				Item.TextColor3 = Color3.fromRGB(255, 255, 255)
 				Item.TextSize = 34.000
