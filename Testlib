@@ -376,7 +376,7 @@ function library:CreateWindow(name)
 			UIPadding.PaddingTop = UDim.new(0, 10)
 
 			Dropdown.Parent = DropdownBack
-			Dropdown.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+			Dropdown.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 			Dropdown.Position = UDim2.new(0, 0, -0.00862045307, 0)
 			Dropdown.Size = UDim2.new(0, 307, 0, 30)
 			Dropdown.Font = Enum.Font.SourceSans
@@ -426,10 +426,10 @@ function library:CreateWindow(name)
 
 				Item.Name = "Item"
 				Item.Parent = Containers2
-				Item.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+				Item.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
 				Item.Position = UDim2.new(0, 0, 1.27499998, 0)
 				Item.Size = UDim2.new(0, 413, 0, 30)
-				Item.Font = Enum.Font.SourceSans
+				Item.Font = Enum.Font.Scifi
 				Item.Text = v or "Item"
 				Item.TextColor3 = Color3.fromRGB(255, 255, 255)
 				Item.TextSize = 34.000
