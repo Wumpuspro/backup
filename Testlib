@@ -366,7 +366,7 @@ function library:CreateWindow(name)
 
 			DropdownBack.Name = name
 			DropdownBack.Parent = CategoryFrame
-			DropdownBack.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+			DropdownBack.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 			DropdownBack.BorderSizePixel = 0
 			DropdownBack.Position = UDim2.new(0, 0, 0.436681211, 0)
 			DropdownBack.Size = UDim2.new(0, 440, 0, 66)
@@ -426,7 +426,7 @@ function library:CreateWindow(name)
 
 				Item.Name = "Item"
 				Item.Parent = Containers2
-				Item.BackgroundColor3 = Color3.fromRGB(63, 0, 140)
+				Item.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 				Item.Position = UDim2.new(0, 0, 1.27499998, 0)
 				Item.Size = UDim2.new(0, 413, 0, 30)
 				Item.Font = Enum.Font.SourceSans
