@@ -635,7 +635,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			ClickMe.Size = UDim2.new(0, 291, 0, 22)
 			ClickMe.ZIndex = 5
 			ClickMe.Font = Enum.Font.SciFi
-			ClickMe.Text = text.." ⚪" or "Button ⚪"
+			ClickMe.Text = text.." " or "Button "
 			ClickMe.TextColor3 = Color3.fromRGB(255, 255, 255)
 			ClickMe.TextSize = 19.000
 			ClickMe.TextWrapped = true
