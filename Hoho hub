@@ -787,7 +787,7 @@ function hoho:Window(hub, the_game_name, main_color)
 						func(toggled)
 					end)
 					ripple(ClickThis, mouse.X, mouse.Y)
-					ClickThis.BackgroundColor3 = Color3.fromRGB(64, 64,64)
+					ClickThis.BackgroundColor3 = Color3.fromRGB(255, 255,255)
 				else
 					toggled = true
 					pcall(function()
@@ -962,9 +962,9 @@ function hoho:Window(hub, the_game_name, main_color)
 			DropButton.ZIndex = 11
 			DropButton.Font = Enum.Font.SciFi
 			DropButton.Text = txt..": nil 💬"
-			DropButton.TextColor3 =  Color3.fromRGB(64,64,64)
+			DropButton.TextColor3 =  Color3.fromRGB(255,255,255)
 			DropButton.TextSize = 19.000
-			DropButton.TextStrokeTransparency = 0.100
+			DropButton.TextStrokeTransparency 
 			DropButton.TextTransparency = 0.100
 			DropButton.TextWrapped = true
 			
@@ -973,7 +973,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			uistroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 			uistroke.Color = Color3.new(1, 1, 1)
 			uistroke.LineJoinMode = Enum.LineJoinMode.Round
-			uistroke.Thickness = 2
+			uistroke.Thickness = 0
 			uistroke.Parent = DropButton
 
 			UICorner.CornerRadius = UDim.new(0, 5)
