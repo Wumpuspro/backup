@@ -692,7 +692,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			TextHere.Font = Enum.Font.SciFi
 			TextHere.TextColor3 =  Color3.fromRGB(255,255,255)
 			TextHere.TextScaled = false
-			TextHere.TextSize = 15.000
+			TextHere.TextSize = 18.000
 			TextHere.TextStrokeTransparency = 0.0
 			TextHere.TextTransparency = 0.100
 			TextHere.TextWrapped = true
@@ -787,14 +787,14 @@ function hoho:Window(hub, the_game_name, main_color)
 						func(toggled)
 					end)
 					ripple(ClickThis, mouse.X, mouse.Y)
-					ClickThis.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					ClickThis.BackgroundColor3 = Color3.fromRGB(64, 64,64)
 				else
 					toggled = true
 					pcall(function()
 						func(toggled)
 					end)
 					ripple(ClickThis, mouse.X, mouse.Y)
-					ClickThis.BackgroundColor3 =  Color3.fromRGB(64,64,64)
+					ClickThis.BackgroundColor3 =  Color3.fromRGB(0,255,0)
 				end
 			end)
 			local hoho_toggle = {}
@@ -999,7 +999,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			uistroke2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 			uistroke2.Color = Color3.new(1, 1, 1)
 			uistroke2.LineJoinMode = Enum.LineJoinMode.Round
-			uistroke2.Thickness = 2
+			uistroke2.Thickness = 0
 			uistroke2.Parent = DropList
 
 			UIListLayoutZZZ.Name = "UIListLayoutZZZ"
@@ -1014,7 +1014,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			ButtonInsideDrop.ZIndex = 15
 			ButtonInsideDrop.Font = Enum.Font.SciFi
 			ButtonInsideDrop.Text = "Button 🖱️"
-			ButtonInsideDrop.TextColor3 =  Color3.fromRGB(64,64,64)
+			ButtonInsideDrop.TextColor3 =  Color3.fromRGB(255,255,255)
 			ButtonInsideDrop.TextSize = 19.000
 			ButtonInsideDrop.TextStrokeTransparency = 0.100
 			ButtonInsideDrop.TextTransparency = 0.100
