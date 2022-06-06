@@ -727,7 +727,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 			ToggleTemp.Name = "ToggleTemp"
 			ToggleTemp.Parent = TabFrame
-			ToggleTemp.BackgroundColor3 =  Color3.fromRGB(64,64,64)
+			ToggleTemp.BackgroundColor3 =  Color3.fromRGB(255,255,255)
 			ToggleTemp.BackgroundTransparency = 1.000
 			ToggleTemp.BorderSizePixel = 0
 			ToggleTemp.Position = UDim2.new(0, 0, 0.265151501, 0)
