@@ -973,7 +973,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			uistroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 			uistroke.Color = Color3.new(1, 1, 1)
 			uistroke.LineJoinMode = Enum.LineJoinMode.Round
-			uistroke.Thickness = 0
+			uistroke.Thickness = 2
 			uistroke.Parent = DropButton
 
 			UICorner.CornerRadius = UDim.new(0, 5)
