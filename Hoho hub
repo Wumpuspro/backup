@@ -945,7 +945,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 			DropTemp.Name = "DropTemp"
 			DropTemp.Parent = TabFrame
-			DropTemp.BackgroundColor3 = Color3.fromRGB(64,64,64)
+			DropTemp.BackgroundColor3 = Color3.fromRGB(255,255,255)
 			DropTemp.BackgroundTransparency = 1.000
 			DropTemp.BorderColor3 = Color3.fromRGB(27, 42, 53)
 			DropTemp.BorderSizePixel = 0
@@ -955,7 +955,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 			DropButton.Name = "DropButton"
 			DropButton.Parent = DropTemp
-			DropButton.BackgroundColor3 = Color3.fromRGB(64,64,64)
+			DropButton.BackgroundColor3 = Color3.fromRGB(255,255,255)
 			DropButton.BackgroundTransparency = 1.000
 			DropButton.Position = UDim2.new(0.0325732902, 0, 0.0740740672, 0)
 			DropButton.Size = UDim2.new(0, 291, 0, 22)
