@@ -735,7 +735,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 			TextHere.Name = "TextHere"
 			TextHere.Parent = ToggleTemp
-			TextHere.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TextHere.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 			TextHere.BackgroundTransparency = 1.000
 			TextHere.BorderSizePixel = 0
 			TextHere.Position = UDim2.new(0.0325732902, 0, 0.113073282, 0)
@@ -756,7 +756,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			uistroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 			uistroke.Color = Color3.new(1, 1, 1)
 			uistroke.LineJoinMode = Enum.LineJoinMode.Round
-			uistroke.Thickness = 2
+			uistroke.Thickness = 0
 			uistroke.Parent = TextHere
 
 			UICorner.CornerRadius = UDim.new(0, 5)
@@ -764,7 +764,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 			ClickThis.Name = "ClickThis"
 			ClickThis.Parent = ToggleTemp
-			ClickThis.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			ClickThis.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 			ClickThis.Position = UDim2.new(0.863192201, 0, 0.1875, 0)
 			ClickThis.Size = UDim2.new(0, 27, 0, 18)
 			ClickThis.ZIndex = 7
@@ -787,7 +787,7 @@ function hoho:Window(hub, the_game_name, main_color)
 						func(toggled)
 					end)
 					ripple(ClickThis, mouse.X, mouse.Y)
-					ClickThis.BackgroundColor3 = Color3.fromRGB(255, 255,255)
+					ClickThis.BackgroundColor3 = Color3.fromRGB(64, 64,64)
 				else
 					toggled = true
 					pcall(function()
