@@ -964,7 +964,6 @@ function hoho:Window(hub, the_game_name, main_color)
 			DropButton.Text = txt..": nil 💬"
 			DropButton.TextColor3 =  Color3.fromRGB(255,255,255)
 			DropButton.TextSize = 19.000
-			DropButton.TextStrokeTransparency = 0
 			DropButton.TextTransparency = 0.100
 			DropButton.TextWrapped = true
 			
@@ -999,7 +998,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			uistroke2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 			uistroke2.Color = Color3.new(1, 1, 1)
 			uistroke2.LineJoinMode = Enum.LineJoinMode.Round
-			uistroke2.Thickness = 0
+			uistroke2.Thickness = 2
 			uistroke2.Parent = DropList
 
 			UIListLayoutZZZ.Name = "UIListLayoutZZZ"
