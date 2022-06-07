@@ -783,7 +783,7 @@ function hoho:Window(hub, the_game_name, main_color)
 						func(toggled)
 					end)
 					ripple(ClickThis, mouse.X, mouse.Y)
-					ClickThis.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					ClickThis.BackgroundColor3 = Color3.fromRGB(51, 255, 51)
 				else
 					toggled = true
 					pcall(function()
@@ -805,7 +805,7 @@ function hoho:Window(hub, the_game_name, main_color)
 				else
 					toggled = false
 					ripple(ClickThis, mouse.X, mouse.Y)
-					ClickThis.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					ClickThis.BackgroundColor3 = Color3.fromRGB(51, 255, 51)
 				end
 			end
 			return hoho_toggle
