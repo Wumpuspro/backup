@@ -326,7 +326,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	GameName.ZIndex = 999
 	GameName.Font = Enum.Font.SciFi
 	GameName.Text = hub or "HoHo Hub"
-	GameName.TextColor3 = Color3.fromRGB(255, 170, 0)
+	GameName.TextColor3 = Color3.fromRGB(255, 255, 255)
 	GameName.TextScaled = true
 	GameName.TextSize = 14.000
 	GameName.TextStrokeTransparency = 0.100
