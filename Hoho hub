@@ -237,7 +237,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	
 	BlackBackground.Name = "BlackBackground"
 	BlackBackground.Parent = Top_Bar
-	BlackBackground.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	BlackBackground.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
 	BlackBackground.BackgroundTransparency = 0.200
 	BlackBackground.BorderSizePixel = 0
 	BlackBackground.Position = UDim2.new(-0.000204942495, 0, 1, 0)
@@ -310,7 +310,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 	line.Name = "line"
 	line.Parent = LeftTab
-	line.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	line.BorderSizePixel = 0
 	line.Position = UDim2.new(0, 0, 0.124528289, 0)
 	line.Size = UDim2.new(0, 123, 0, 1)
@@ -485,7 +485,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			NofLabel.Size = UDim2.new(0, 188, 0, 52)
 			NofLabel.ZIndex = 4
 			NofLabel.Font = Enum.Font.Cartoon
-			NofLabel.TextColor3 = Color3.fromRGB(0, 255, 127)
+			NofLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 			NofLabel.TextScaled = false
 			NofLabel.TextSize = 25.000
 			NofLabel.TextStrokeTransparency = 0.100
@@ -605,7 +605,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			local linetemp = Instance.new("Frame")
 			linetemp.Name = "linetemp"
 			linetemp.Parent = TabFrame
-			linetemp.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			linetemp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			linetemp.BorderSizePixel = 0
 			linetemp.Position = UDim2.new(0, 0, 0.102272727, 0)
 			linetemp.Size = UDim2.new(0, 301, 0, 1)
@@ -633,7 +633,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			ClickMe.ZIndex = 5
 			ClickMe.Font = Enum.Font.Cartoon
 			ClickMe.Text = text.." 🖱️" or "Button 🖱️"
-			ClickMe.TextColor3 = Color3.fromRGB(0, 0, 0)
+			ClickMe.TextColor3 = Color3.fromRGB(255, 255, 255)
 			ClickMe.TextSize = 19.000
 			ClickMe.TextWrapped = true
 
@@ -674,7 +674,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			local TextForm = Instance.new("Frame")
 			local TextHere = Instance.new("TextLabel")
 			TextForm.Name = "TextForm"
-			TextForm.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+			TextForm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			TextForm.BackgroundTransparency = 1.000
 			TextForm.BorderSizePixel = 0
 			TextForm.Size = UDim2.new(0, 307, 0, 27)
@@ -687,7 +687,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			TextHere.Size = UDim2.new(0, 289, 0, 24)
 			TextHere.ZIndex = 4
 			TextHere.Font = Enum.Font.Cartoon
-			TextHere.TextColor3 = Color3.fromRGB(0, 255, 127)
+			TextHere.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextHere.TextScaled = true
 			TextHere.TextSize = 14.000
 			TextHere.TextStrokeTransparency = 0.100
@@ -724,7 +724,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 			ToggleTemp.Name = "ToggleTemp"
 			ToggleTemp.Parent = TabFrame
-			ToggleTemp.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			ToggleTemp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			ToggleTemp.BackgroundTransparency = 1.000
 			ToggleTemp.BorderSizePixel = 0
 			ToggleTemp.Position = UDim2.new(0, 0, 0.265151501, 0)
@@ -740,7 +740,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			TextHere.ZIndex = 4
 			TextHere.Font = Enum.Font.Cartoon
 			TextHere.Text = "  "..toggle_text or "text"
-			TextHere.TextColor3 = Color3.fromRGB(0, 255, 127)
+			TextHere.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextHere.TextScaled = true
 			TextHere.TextSize = 14.000
 			TextHere.TextStrokeTransparency = 0.100
@@ -774,7 +774,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			
 			local toggled = state or false
 			if toggled == true then
-				ClickThis.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+				ClickThis.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			end
 			ClickThis.MouseButton1Click:Connect(function()
 				if toggled == true then
@@ -790,7 +790,7 @@ function hoho:Window(hub, the_game_name, main_color)
 						func(toggled)
 					end)
 					ripple(ClickThis, mouse.X, mouse.Y)
-					ClickThis.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+					ClickThis.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				end
 			end)
 			local hoho_toggle = {}
@@ -801,7 +801,7 @@ function hoho:Window(hub, the_game_name, main_color)
 				if new_state == true then
 					toggled = true
 					ripple(ClickThis, mouse.X, mouse.Y)
-					ClickThis.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+					ClickThis.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				else
 					toggled = false
 					ripple(ClickThis, mouse.X, mouse.Y)
@@ -889,7 +889,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			TextHere.Size = UDim2.new(0, 289, 0, 18)
 			TextHere.ZIndex = 4
 			TextHere.Font = Enum.Font.Cartoon
-			TextHere.TextColor3 = Color3.fromRGB(0, 255, 127)
+			TextHere.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextHere.TextScaled = true
 			TextHere.TextSize = 14.000
 			TextHere.TextStrokeTransparency = 0.100
@@ -941,7 +941,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 			DropTemp.Name = "DropTemp"
 			DropTemp.Parent = TabFrame
-			DropTemp.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			DropTemp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			DropTemp.BackgroundTransparency = 1.000
 			DropTemp.BorderColor3 = Color3.fromRGB(27, 42, 53)
 			DropTemp.BorderSizePixel = 0
@@ -951,14 +951,14 @@ function hoho:Window(hub, the_game_name, main_color)
 
 			DropButton.Name = "DropButton"
 			DropButton.Parent = DropTemp
-			DropButton.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+			DropButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			DropButton.BackgroundTransparency = 1.000
 			DropButton.Position = UDim2.new(0.0325732902, 0, 0.0740740672, 0)
 			DropButton.Size = UDim2.new(0, 291, 0, 22)
 			DropButton.ZIndex = 11
 			DropButton.Font = Enum.Font.Cartoon
 			DropButton.Text = txt..": nil 💬"
-			DropButton.TextColor3 = Color3.fromRGB(0, 255, 127)
+			DropButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 			DropButton.TextSize = 19.000
 			DropButton.TextStrokeTransparency = 0.100
 			DropButton.TextTransparency = 0.100
@@ -1004,13 +1004,13 @@ function hoho:Window(hub, the_game_name, main_color)
 			
 			local ButtonInsideDrop = Instance.new("TextButton")
 			ButtonInsideDrop.Name = "ButtonInsideDrop"
-			ButtonInsideDrop.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+			ButtonInsideDrop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			ButtonInsideDrop.BackgroundTransparency = 1.000
 			ButtonInsideDrop.Size = UDim2.new(0, 282, 0, 22)
 			ButtonInsideDrop.ZIndex = 15
 			ButtonInsideDrop.Font = Enum.Font.Cartoon
 			ButtonInsideDrop.Text = "Button 🖱️"
-			ButtonInsideDrop.TextColor3 = Color3.fromRGB(0, 255, 127)
+			ButtonInsideDrop.TextColor3 = Color3.fromRGB(255, 255, 255)
 			ButtonInsideDrop.TextSize = 19.000
 			ButtonInsideDrop.TextStrokeTransparency = 0.100
 			ButtonInsideDrop.TextTransparency = 0.100
@@ -1112,7 +1112,7 @@ function hoho:Window(hub, the_game_name, main_color)
 
 			TypeZone.Name = "TypeZone"
 			TypeZone.Parent = TabFrame
-			TypeZone.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+			TypeZone.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			TypeZone.BackgroundTransparency = 1.000
 			TypeZone.BorderSizePixel = 0
 			TypeZone.Size = UDim2.new(0, 307, 0, 27)
@@ -1126,7 +1126,7 @@ function hoho:Window(hub, the_game_name, main_color)
 			TextHere.Size = UDim2.new(0, 220, 0, 24)
 			TextHere.ZIndex = 4
 			TextHere.Font = Enum.Font.Cartoon
-			TextHere.TextColor3 = Color3.fromRGB(0, 255, 127)
+			TextHere.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextHere.TextScaled = true
 			TextHere.TextSize = 14.000
 			TextHere.TextStrokeTransparency = 0.100
@@ -1215,7 +1215,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	videoId.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
 	videoId.PlaceholderText = "ID Video"
 	videoId.Text = HoHo_Video_Id or ""
-	videoId.TextColor3 = Color3.fromRGB(0, 255, 127)
+	videoId.TextColor3 = Color3.fromRGB(255, 255, 255)
 	videoId.TextScaled = true
 	videoId.TextSize = 14.000
 	videoId.TextStrokeTransparency = 0.500
@@ -1236,7 +1236,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	ToggVideo.TextColor3 = Color3.fromRGB(0, 0, 0)
 	ToggVideo.TextSize = 14.000
 	if HoHo_Video_Display == "true" then
-		ToggVideo.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+		ToggVideo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	end
 	
 	
@@ -1250,7 +1250,7 @@ function hoho:Window(hub, the_game_name, main_color)
 		else
 			HoHo_Video_Display = "true"
 			ripple(ToggVideo, mouse.X, mouse.Y)
-			ToggVideo.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+			ToggVideo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			VideoBackground.Visible = true
 			BlackBackground.BackgroundTransparency = 0.9
 		end
@@ -1269,7 +1269,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	VideoText.ZIndex = 4
 	VideoText.Font = Enum.Font.Cartoon
 	VideoText.Text = "  Video Background:"
-	VideoText.TextColor3 = Color3.fromRGB(0, 255, 127)
+	VideoText.TextColor3 = Color3.fromRGB(255, 255, 255)
 	VideoText.TextSize = 19.000
 	VideoText.TextStrokeTransparency = 0.100
 	VideoText.TextTransparency = 0.100
@@ -1298,7 +1298,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	ToggleFastLoad.TextColor3 = Color3.fromRGB(0, 0, 0)
 	ToggleFastLoad.TextSize = 14.000
 	if HoHo_Tog_Fast == "true" then
-		ToggleFastLoad.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+		ToggleFastLoad.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	end
 
 	
@@ -1310,7 +1310,7 @@ function hoho:Window(hub, the_game_name, main_color)
 		else
 			HoHo_Tog_Fast = "true"
 			ripple(ToggleFastLoad, mouse.X, mouse.Y)
-			ToggleFastLoad.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+			ToggleFastLoad.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		end
 	end)
 
@@ -1327,7 +1327,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	FastLoadText.ZIndex = 4
 	FastLoadText.Font = Enum.Font.Cartoon
 	FastLoadText.Text = "  Fast Load (PC):"
-	FastLoadText.TextColor3 = Color3.fromRGB(0, 255, 127)
+	FastLoadText.TextColor3 = Color3.fromRGB(255, 255, 255)
 	FastLoadText.TextSize = 19.000
 	FastLoadText.TextStrokeTransparency = 0.100
 	FastLoadText.TextTransparency = 0.100
