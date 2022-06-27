@@ -43,15 +43,51 @@ function library:CreateWindow(name)
 	local UI = Instance.new("ScreenGui")
 	local MainFrame = Instance.new("Frame")
 	local MainUICorner = Instance.new("UICorner")
-	local Bar = Instance.new("Frame")
 	local Title = Instance.new("TextLabel")
 	local Containers = Instance.new("Frame")
 	local ExitButton = Instance.new("TextButton")
-	local SideContainer = Instance.new("Frame")
+	local SideContainer = Instance.new("ImageLabel")
 	local UIListLayout = Instance.new("UIListLayout")
 	local UIPadding_2 = Instance.new("UIPadding")
-	local SideBarLine = Instance.new("Frame")
 	local CreditLabel = Instance.new("TextLabel")
+	local shit = Instance.new("UICorner")
+	local fuck = Instance.new("UICorner")
+	local Window = Instance.new("UIStroke")
+	local Windowlo = Instance.new("UIStroke")
+	local Windowdrop = Instance.new("UIStroke")
+
+Windowdrop.Name = "WindowdropStroke"
+    Windowdrop.Parent = Containers2
+    Windowdrop.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    Windowdrop.Color = Color3.fromRGB(255,255,255)
+    Windowdrop.LineJoinMode = Enum.LineJoinMode.Round
+    Windowdrop.Thickness = 1
+    Windowdrop.Transparency = 0
+    Windowdrop.Enabled = true
+    Windowdrop.Archivable = true
+
+Windowlo.Name = "WindowloStroke"
+    Windowlo.Parent = SideContainer
+    Windowlo.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    Windowlo.Color = Color3.fromRGB(255,255,255)
+    Windowlo.LineJoinMode = Enum.LineJoinMode.Round
+    Windowlo.Thickness = 1
+    Windowlo.Transparency = 0
+    Windowlo.Enabled = true
+    Windowlo.Archivable = true
+
+shit.Parent = Title
+fuck.Parent = SideContainer
+Window.Name = "WindowStroke"
+    Window.Parent = MainFrame
+    Window.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    Window.Color = Color3.fromRGB(255,255,255)
+    Window.LineJoinMode = Enum.LineJoinMode.Round
+    Window.Thickness = 1
+    Window.Transparency = 0
+    Window.Enabled = true
+    Window.Archivable = true
+
 
 	UI.Name = "UI"
 	UI.Parent = game:GetService("CoreGui")
@@ -59,30 +95,25 @@ function library:CreateWindow(name)
 
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = UI
-	MainFrame.BackgroundColor3 = Color3.fromRGB(32, 32, 37)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	MainFrame.BorderSizePixel = 0
+	MainFrame.BackgroundTransparency = 0
 	MainFrame.Position = UDim2.new(0.321212113, 0, 0.330061376, 0)
-	MainFrame.Size = UDim2.new(0, 563, 0, 285)
+	MainFrame.Size = UDim2.new(0, 500, 0, 300)
 
 	dragify(MainFrame)
 
 	MainUICorner.Parent = MainFrame
 	MainUICorner.CornerRadius = UDim.new(0, 5)
 
-	Bar.Name = "Bar"
-	Bar.Parent = MainFrame
-	Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Bar.BorderSizePixel = 0
-	Bar.Position = UDim2.new(0, 0, 0.125242367, 0)
-	Bar.Size = UDim2.new(0, 563, 0, 2)
-
 	Title.Name = "Title"
 	Title.Parent = MainFrame
-	Title.BackgroundColor3 = Color3.new(1, 1, 1)
-	Title.BackgroundTransparency = 1
+	Title.BackgroundColor3 = Color3.fromRGB(20, 
+	    20, 20)
+	Title.BackgroundTransparency = 0
 	Title.BorderSizePixel = 0
-	Title.Position = UDim2.new(0.0200714413, 0, 0.00306394883, 0)
-	Title.Size = UDim2.new(0, 458, 0, 30)
+	Title.Position = UDim2.new(0.0000714370, 0, 0.00306394883, 0)
+	Title.Size = UDim2.new(0, 500, 0, 30)
 	Title.Font = Enum.Font.SourceSans
 	Title.RichText = true;
 	Title.Text = "<font color=\"#FF0000\">"..string.sub(name, 1, 1).."</font>"..string.sub(name, 2)
@@ -96,54 +127,49 @@ function library:CreateWindow(name)
 	Containers.BackgroundTransparency = 1
 	Containers.BorderSizePixel = 0
 	Containers.ClipsDescendants = true
-	Containers.Position = UDim2.new(0.201694921, 0, 0.132488742, 0)
-	Containers.Size = UDim2.new(0, 471, 0, 237)
+	Containers.Position = UDim2.new(0.2535494921, 0, 0.132488742, 0)
+	Containers.Size = UDim2.new(0, 468, 0, 237)
 
 	CreditLabel.Parent = Containers
 	CreditLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	CreditLabel.BackgroundTransparency = 1.000
 	CreditLabel.Size = UDim2.new(0, 471, 0, 239)
-	CreditLabel.Font = Enum.Font.SourceSans
+	CreditLabel.Font = Enum.Font.SciFi
 	CreditLabel.Text = "Created by : KaiZen"
 	CreditLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-	CreditLabel.TextSize = 67.000
+	CreditLabel.TextSize = 20.000
 	CreditLabel.TextWrapped = true
 
 	ExitButton.Name = "ExitButton"
-	ExitButton.Parent = MainFrame
-	ExitButton.BackgroundColor3 = Color3.new(1, 1, 1)
+	ExitButton.Parent = CreditLabel
+	ExitButton.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 	ExitButton.BackgroundTransparency = 1
 	ExitButton.BorderSizePixel = 0
-	ExitButton.Position = UDim2.new(0.937195182, 0, 0.0144927539, 0)
+	ExitButton.Position = UDim2.new(0.800061002, 0, 0, 0)
 	ExitButton.Size = UDim2.new(0, 30, 0, 30)
 	ExitButton.Font = Enum.Font.Roboto
 	ExitButton.Text = "X"
 	ExitButton.TextColor3 = Color3.new(1, 1, 1)
 	ExitButton.TextSize = 20
 	ExitButton.TextWrapped = true
+ExitButton.Visible = false
 
 	SideContainer.Name = "SideContainer"
 	SideContainer.Parent = MainFrame
-	SideContainer.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
-	SideContainer.BackgroundTransparency = 1
+	SideContainer.BackgroundColor3 = Color3.fromRGB(22,22,22)
+	SideContainer.BackgroundTransparency = 0.1
 	SideContainer.BorderSizePixel = 0
-	SideContainer.Position = UDim2.new(0, 0, 0.132488742, 0)
-	SideContainer.Size = UDim2.new(0, 117, 0, 238)
+	SideContainer.Position = UDim2.new(0, 5, 0.122488742, 0)
+	SideContainer.Size = UDim2.new(0, 128, 0, 258)
+SideContainer.Image = "rbxassetid://9896553189"
 
 	UIListLayout.Parent = SideContainer
 	UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	UIListLayout.Padding = UDim.new(0, 15)
+	UIListLayout.Padding = UDim.new(0, 10)
 
 	UIPadding_2.Parent = SideContainer
 	UIPadding_2.PaddingTop = UDim.new(0, 10)
-
-	SideBarLine.Name = "SideBarLine"
-	SideBarLine.Parent = MainFrame
-	SideBarLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	SideBarLine.BorderSizePixel = 0
-	SideBarLine.Position = UDim2.new(0.198305085, 0, 0.132488742, 0)
-	SideBarLine.Size = UDim2.new(0, 2, 0, 239)
 
 	ExitButton.MouseButton1Click:Connect(function()
 		UI:Destroy()
@@ -157,6 +183,17 @@ function library:CreateWindow(name)
 		local UIPadding = Instance.new("UIPadding")
 		local SideButton = Instance.new("TextButton")
 		local SideButtonUICorner = Instance.new("UICorner")
+local Windowshit = Instance.new("UIStroke")
+
+Windowshit.Name = "WindowshitStroke"
+    Windowshit.Parent = SideContainer
+    Windowshit.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    Windowshit.Color = Color3.fromRGB(255,255,255)
+    Windowshit.LineJoinMode = Enum.LineJoinMode.Round
+    Windowshit.Thickness = 1
+    Windowshit.Transparency = 0
+    Windowshit.Enabled = true
+    Windowshit.Archivable = true
 
 		CategoryFrame.Name = name
 		CategoryFrame.Parent = Containers
@@ -165,11 +202,13 @@ function library:CreateWindow(name)
 		CategoryFrame.BorderSizePixel = 0
 		CategoryFrame.Size = UDim2.new(0, 471, 0, 239)
 		CategoryFrame.Visible = false
+    CategoryFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+    CategoryFrame.ScrollBarThickness = 0
 
 		UIGridLayout.Parent = CategoryFrame
 		UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-		UIGridLayout.CellPadding = UDim2.new(0, 0,0, 10)
-		UIGridLayout.CellSize = UDim2.new(0, 440,0, 50)
+		UIGridLayout.CellPadding = UDim2.new(0, 1,0, 1)
+		UIGridLayout.CellSize = UDim2.new(0, 410,0, 50)
 
 		UIPadding.Parent = CategoryFrame
 		UIPadding.PaddingLeft = UDim.new(0, 10)
@@ -177,9 +216,10 @@ function library:CreateWindow(name)
 
 		SideButton.Name = name
 		SideButton.Parent = SideContainer
-		SideButton.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
-		SideButton.Size = UDim2.new(0, 98, 0, 30)
-		SideButton.Font = Enum.Font.SourceSans
+		SideButton.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+		SideButton.BackgroundTransparency = 0.1
+		SideButton.Size = UDim2.new(0, 110, 0, 30)
+		SideButton.Font = Enum.Font.SciFi
 		SideButton.Text = name
 		SideButton.TextColor3 = Color3.new(1, 1, 1)
 		SideButton.TextSize = 20
@@ -207,26 +247,38 @@ function library:CreateWindow(name)
 			local ButtonUICorner = Instance.new("UICorner")
 			local BackCorner = Instance.new("UICorner")
 			local UIPadding = Instance.new("UIPadding")
+local Windowbut = Instance.new("UIStroke")
+
+Windowbut.Name = "WindowbutStroke"
+    Windowbut.Parent = Button
+    Windowbut.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    Windowbut.Color = Color3.fromRGB(255,255,255)
+    Windowbut.LineJoinMode = Enum.LineJoinMode.Round
+    Windowbut.Thickness = 1
+    Windowbut.Transparency = 0
+    Windowbut.Enabled = true
+    Windowbut.Archivable = true
 
 			ButBack.Name = name
 			ButBack.Parent = CategoryFrame
 			ButBack.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 			ButBack.BorderSizePixel = 0
+			ButBack.BackgroundTransparency = 1
 			ButBack.Position = UDim2.new(0, 0, 0.436681211, 0)
-			ButBack.Size = UDim2.new(0, 440, 0, 66)
+			ButBack.Size = UDim2.new(0, 410, 0, 66)
 
 			Button.Name = name
 			Button.Parent = ButBack
-			Button.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
-			Button.Size = UDim2.new(0, 413, 0, 30)
-			Button.Font = Enum.Font.SourceSans
+			Button.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			Button.Size = UDim2.new(0, 340, 0, 30)
+			Button.Font = Enum.Font.SciFi
 			Button.Text = name
 			Button.TextColor3 = Color3.new(1, 1, 1)
-			Button.TextSize = 34
+			Button.TextSize = 20
 
 			UIPadding.Parent = ButBack
-			UIPadding.PaddingLeft = UDim.new(0, 10)
-			UIPadding.PaddingTop = UDim.new(0, 10)
+			UIPadding.PaddingLeft = UDim.new(0, 8)
+			UIPadding.PaddingTop = UDim.new(0, 8)
 
 			--	if #name > 13 then
 			--		Button.TextScaled = true
@@ -248,13 +300,36 @@ function library:CreateWindow(name)
 			local UICorner_2 = Instance.new("UICorner")
 			local UIPadding = Instance.new("UIPadding")
 			local BackCorner = Instance.new("UICorner")
+local Windowte = Instance.new("UIStroke")
+local Windowtext = Instance.new("UIStroke")
+
+Windowtext.Name = "WindowtextStroke"
+    Windowtext.Parent = TextBox
+    Windowtext.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    Windowtext.Color = Color3.fromRGB(255,255,255)
+    Windowtext.LineJoinMode = Enum.LineJoinMode.Round
+    Windowtext.Thickness = 1
+    Windowtext.Transparency = 0
+    Windowtext.Enabled = true
+    Windowtext.Archivable = true
+
+Windowte.Name = "WindowteStroke"
+    Windowte.Parent = InputButton
+    Windowte.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    Windowte.Color = Color3.fromRGB(255,255,255)
+    Windowte.LineJoinMode = Enum.LineJoinMode.Round
+    Windowte.Thickness = 1
+    Windowte.Transparency = 0
+    Windowte.Enabled = true
+    Windowte.Archivable = true
 
 			InputBack.Name = name
 			InputBack.Parent = CategoryFrame
 			InputBack.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 			InputBack.BorderSizePixel = 0
 			InputBack.Position = UDim2.new(0, 0, 0.436681211, 0)
-			InputBack.Size = UDim2.new(0, 440, 0, 66)
+			InputBack.Size = UDim2.new(0, 410, 0, 66)
+			InputBack.BackgroundTransparency = 1
 
 			UIPadding.Parent = InputBack
 			UIPadding.PaddingLeft = UDim.new(0, 10)
@@ -262,11 +337,11 @@ function library:CreateWindow(name)
 
 			InputButton.Name = name
 			InputButton.Parent = InputBack
-			InputButton.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+			InputButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 			InputButton.Size = UDim2.new(0, 207, 0, 32)
-			InputButton.Font = Enum.Font.SourceSans
+			InputButton.Font = Enum.Font.SciFi
 			InputButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-			InputButton.TextSize = 34
+			InputButton.TextSize = 20
 			InputButton.Text = name
 
 			UICorner.CornerRadius = UDim.new(0, 5)
@@ -274,14 +349,14 @@ function library:CreateWindow(name)
 
 			TextBox.Name = inputname
 			TextBox.Parent = InputButton
-			TextBox.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+			TextBox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 			TextBox.Position = UDim2.new(1.10000002, 0, 0, 0)
-			TextBox.Size = UDim2.new(0, 191, 0, 32)
-			TextBox.Font = Enum.Font.SourceSans
+			TextBox.Size = UDim2.new(0, 112, 0, 32)
+			TextBox.Font = Enum.Font.SciFi
 			TextBox.PlaceholderColor3 = Color3.fromRGB(206, 206, 206)
 			TextBox.PlaceholderText = inputname
 			TextBox.Text = ""
-			TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+			TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextBox.TextScaled = true
 			TextBox.TextSize = 14.000
 			TextBox.TextWrapped = true
@@ -294,6 +369,62 @@ function library:CreateWindow(name)
 			InputButton.MouseButton1Click:Connect(callback)
 		end
 
+function Module:Label(text)
+			local Label = Instance.new("TextLabel")
+			local PaddingLabel = Instance.new("UIPadding")
+			local labelfunc = {}
+	
+			Label.Name = "Label"
+			Label.Parent = CategoryFrame
+			Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Label.BackgroundTransparency = 1.000
+			Label.Size = UDim2.new(0, 320, 0, 20)
+			Label.Font = Enum.Font.SciFi
+			Label.Position = UDim2.new(0, 0, 0.436681211, 0)
+			Label.TextColor3 = Color3.fromRGB(225, 225, 225)
+			Label.TextSize = 20.000
+			Label.Text = text
+			Label.TextXAlignment = Enum.TextXAlignment.Left
+
+			PaddingLabel.PaddingLeft = UDim.new(0,10)
+			PaddingLabel.PaddingTop = UDim.new(0,10)
+			PaddingLabel.Parent = Label
+			PaddingLabel.Name = "PaddingLabel"
+	
+			function labelfunc:Set(newtext)
+			Label.Text = newtext
+		end
+		return labelfunc
+	end
+
+function Module:Label1(text)
+			local Label1 = Instance.new("TextLabel")
+			local PaddingLabel1 = Instance.new("UIPadding")
+			local label1func = {}
+	
+			Label1.Name = "Label"
+			Label1.Parent = CategoryFrame
+			Label1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Label1.BackgroundTransparency = 1.000
+			Label1.Size = UDim2.new(0, 320, 0, 20)
+			Label1.Font = Enum.Font.SciFi
+			Label1.Position = UDim2.new(0, 0, 0.436681211, 0)
+			Label1.TextColor3 = Color3.fromRGB(225, 225, 225)
+			Label1.TextSize = 15.000
+			Label1.Text = text
+			Label1.TextXAlignment = Enum.TextXAlignment.Left
+
+			PaddingLabel1.PaddingLeft = UDim.new(0,20)
+			PaddingLabel1.PaddingTop = UDim.new(0,10)
+			PaddingLabel1.Parent = Label
+			PaddingLabel1.Name = "PaddingLabel"
+	function label1func:Refresh(tochange)
+               Label1.Text = tochange
+            end
+
+            return label1func
+         end
+
 		function Module:Toggle(name, thewok, callback)
 
 			local ButtonBack = Instance.new("Frame")
@@ -301,13 +432,25 @@ function library:CreateWindow(name)
 			local ButtonUICorner = Instance.new("UICorner")
 			local BackCorner = Instance.new("UICorner")
 			local UIPadding = Instance.new("UIPadding")
+local Windowbutshit = Instance.new("UIStroke")
+
+Windowbutshit.Name = "WindowbutshitStroke"
+    Windowbutshit.Parent = Button
+    Windowbutshit.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    Windowbutshit.Color = Color3.fromRGB(255,255,255)
+    Windowbutshit.LineJoinMode = Enum.LineJoinMode.Round
+    Windowbutshit.Thickness = 1
+    Windowbutshit.Transparency = 0
+    Windowbutshit.Enabled = true
+    Windowbutshit.Archivable = true
 
 			ButtonBack.Name = name
 			ButtonBack.Parent = CategoryFrame
 			ButtonBack.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 			ButtonBack.BorderSizePixel = 0
 			ButtonBack.Position = UDim2.new(0, 0, 0.436681211, 0)
-			ButtonBack.Size = UDim2.new(0, 440, 0, 66)
+			ButtonBack.Size = UDim2.new(0, 410, 0, 66)
+			ButtonBack.BackgroundTransparency = 1
 
 			UIPadding.Parent = ButtonBack
 			UIPadding.PaddingLeft = UDim.new(0, 10)
@@ -315,12 +458,12 @@ function library:CreateWindow(name)
 
 			Button.Name = name
 			Button.Parent = ButtonBack
-			Button.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
-			Button.Size = UDim2.new(0, 413, 0, 30)
-			Button.Font = Enum.Font.SourceSans
+			Button.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			Button.Size = UDim2.new(0, 340, 0, 30)
+			Button.Font = Enum.Font.SciFi
 			Button.Text = name
 			Button.TextColor3 = Color3.new(1, 1, 1)
-			Button.TextSize = 34
+			Button.TextSize = 20
 
 			ButtonUICorner.Parent = Button
 			ButtonUICorner.CornerRadius = UDim.new(0, 5)
@@ -363,38 +506,63 @@ function library:CreateWindow(name)
 			local UIPadding2 = Instance.new("UIPadding")
 			
 			local Containers2 = Instance.new("ScrollingFrame")
+local Windowdrop = Instance.new("UIStroke")
+local Windowdropi = Instance.new("UIStroke")
+
+Windowdropi.Name = "WindowdropiStroke"
+    Windowdropi.Parent = FireButton
+    Windowdropi.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    Windowdropi.Color = Color3.fromRGB(255,255,255)
+    Windowdropi.LineJoinMode = Enum.LineJoinMode.Round
+    Windowdropi.Thickness = 1
+    Windowdropi.Transparency = 0
+    Windowdropi.Enabled = true
+    Windowdropi.Archivable = true
+
+Windowdrop.Name = "WindowdropStroke"
+    Windowdrop.Parent = Dropdown
+    Windowdrop.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    Windowdrop.Color = Color3.fromRGB(255,255,255)
+    Windowdrop.LineJoinMode = Enum.LineJoinMode.Round
+    Windowdrop.Thickness = 1
+    Windowdrop.Transparency = 0
+    Windowdrop.Enabled = true
+    Windowdrop.Archivable = true
 
 			DropdownBack.Name = name
 			DropdownBack.Parent = CategoryFrame
 			DropdownBack.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+			DropdownBack.BackgroundTransparency = 1
 			DropdownBack.BorderSizePixel = 0
 			DropdownBack.Position = UDim2.new(0, 0, 0.436681211, 0)
-			DropdownBack.Size = UDim2.new(0, 440, 0, 66)
+			DropdownBack.Size = UDim2.new(0, 410, 0, 66)
 
 			UIPadding.Parent = DropdownBack
 			UIPadding.PaddingLeft = UDim.new(0, 10)
 			UIPadding.PaddingTop = UDim.new(0, 10)
 
 			Dropdown.Parent = DropdownBack
-			Dropdown.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+			Dropdown.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 			Dropdown.Position = UDim2.new(0, 0, -0.00862045307, 0)
-			Dropdown.Size = UDim2.new(0, 307, 0, 30)
-			Dropdown.Font = Enum.Font.SourceSans
+			Dropdown.Size = UDim2.new(0, 300, 0, 30)
+			Dropdown.Font = Enum.Font.SciFi
 			Dropdown.TextColor3 = Color3.fromRGB(255, 255, 255)
-			Dropdown.TextSize = 34.000
+			Dropdown.TextSize = 20.000
 			Dropdown.TextWrapped = true
 			Dropdown.Name = "Dropdown"
 			Dropdown.Text = Dropdownname.." - nil"
 
 			FireButton.Name = "FireButton"
 			FireButton.Parent = Dropdown
-			FireButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-			FireButton.Position = UDim2.new(1.05316257, 0, 0, 0)
-			FireButton.Size = UDim2.new(0, 89, 0, 30)
-			FireButton.Font = Enum.Font.SourceSans
-			FireButton.Text = "Toggle"
+			FireButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			FireButton.BackgroundTransparency = 0
+			FireButton.ZIndex = 3
+			FireButton.Position = UDim2.new(1.02, 0, 0, 0)
+			FireButton.Size = UDim2.new(0, 40, 0, 30)
+			FireButton.Font = Enum.Font.SciFi
+			FireButton.Text = "V"
 			FireButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-			FireButton.TextSize = 34.000
+			FireButton.TextSize = 20.000
 			FireButton.TextWrapped = true
 
 			
@@ -405,11 +573,13 @@ function library:CreateWindow(name)
 			Containers2.BackgroundTransparency = 0.800
 			Containers2.BorderSizePixel = 0
 			Containers2.Position = UDim2.new(0, 0, 1, 0)
-			Containers2.Size = UDim2.new(0, 413, 0, 139)
+			Containers2.Size = UDim2.new(0, 340, 0, 139)
 			Containers2.Visible = false
+Containers2.ScrollBarThickness = 0
+Containers2.CanvasSize = UDim2.new(0, 0, 0, 0)
 
 			UIPadding2.Parent = Containers2
-			UIPadding2.PaddingLeft = UDim.new(0, 10)
+			UIPadding2.PaddingLeft = UDim.new(0, 8)
 			UIPadding2.PaddingTop = UDim.new(0, 10)
 
 			UIGridLayout.Parent = Containers2
@@ -426,13 +596,14 @@ function library:CreateWindow(name)
 
 				Item.Name = "Item"
 				Item.Parent = Containers2
-				Item.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+				Item.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 				Item.Position = UDim2.new(0, 0, 1.27499998, 0)
-				Item.Size = UDim2.new(0, 413, 0, 30)
-				Item.Font = Enum.Font.SourceSans
+				Item.Size = UDim2.new(0, 50, 0, 30)
+				Item.Font = Enum.Font.SciFi
+				Item.BorderSizePixel = 0
 				Item.Text = v or "Item"
 				Item.TextColor3 = Color3.fromRGB(255, 255, 255)
-				Item.TextSize = 34.000
+				Item.TextSize = 20.000
 				Item.TextWrapped = true
 
 				Item.MouseButton1Click:Connect(function()
@@ -473,7 +644,6 @@ function library:CreateWindow(name)
 				TextUICorner.Parent = Dropdown
 				TextUICorner.CornerRadius = UDim.new(0, 5)
 
-				BackCorner.Parent = DropdownBack
 				BackCorner.CornerRadius = UDim.new(0, 5)
 
 		end
